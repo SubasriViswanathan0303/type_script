@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Content</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#btn1").click(function(){
+        var para1=$("#para1");
+        para1.animate({fontSize: '40px'},3000);
+  });
+  $("#btn2").click(function(){
+        var para2=$("#para2");
+        para2.animate({fontSize: '40px'},3000);
+  });
+  $("#btn3").click(function(){
+        var para3=$("#para3");
+        para3.animate({fontSize: '40px'},3000);
+  });   
+});
+    </script>
+</head>
+<body>
+    <main>
+        <section id="box1">
+            <img src="images/1.png" alt="poor network connection" class="boximg">
+            <p>CLOUD</p>
+            <div class="para">
+            <p id="para1">Easily create beautifull dashboards with no software to install and no IT reqired
+                All you need is a computer with a modern browser.
+                ou typically pay only for cloud services you use, helping lower your operating costs </p>
+            </div>
+                <button type="button" id="btn1">Learn More</button>     
+        </section>
+    
+        <section id="box2">
+            <img src="images/2.png" alt="poor network connection" class="boximg">
+            
+            <p>ON-PREMISE</p>  
+            <div class="para"> 
+            <p id="para2">
+                In today’s world of enterprise IT, there are many factors that a company must consider in order to decide
+                 whether a cloud infrastructure is the right fit. Conversely, there are many companies that are
+                  unable make the leap into the cloud
+            </p> 
+        </div>
+            <button type="button" id="btn2">Learn More</button>      
+        </section>
+    
+        <section id="box3">
+            <img src="images/3.png" alt="poor network connection" class="boximg" >
+            <p>EMBEDDED</p>
+            <div class="para">
+                <p id="para3">
+                    An embedded system is a combination of computer hardware and software designed for a specific function. 
+                    Embedded systems may also function within a larger system. The systems can be programmable or have a fixed functionality.
+                </p >    
+            </div>
+            <button type="button" id="btn3">Learn More</button>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
